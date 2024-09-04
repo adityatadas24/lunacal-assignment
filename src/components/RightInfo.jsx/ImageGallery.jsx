@@ -35,11 +35,11 @@ const ImageGallery = () => {
     overflow-hidden p-3 m-1 ml-auto mr-auto"
     >
       <div className="w-full flex justify-between items-center mb-6">
-        <div className="w-20 bg-black text-center p-2 rounded-xl">Gallery</div>
+        <div className="w-20 bg-black text-center p-2 rounded-xl text-sm">Gallery</div>
         <div className="flex justify-center items-center">
           <button
             className="w-30 pl-10 pr-3 bg-[#42474d] text-center p-2 rounded-3xl 
-            shadow-[-3px_-3px_8px_gray,4px_5px_10px_#000] font-semibold text-sm cursor-pointer 
+            shadow-[-3px_-3px_8px_gray,4px_5px_10px_#000] font-semibold text-[15px] cursor-pointer 
             hover:shadow-[-3px_-3px_8px_#000,4px_5px_10px_gray]"
             onClick={addimages}
           >
@@ -72,14 +72,14 @@ const ImageGallery = () => {
           transform: `translateX(-${imageIndex * (100 / 3)}%)`,
         }}
       >
-        <div className=" flex ">
+        <div className="flex ">
           {image.map((item) => (
-            <div style={{ flex: "0 0 auto", marginRight: "5px" }}>
+            <div style={{ flex: "0 0 auto" }}>
               <img
                 key={item.id}
                 src={item.imgs}
                 alt="image"
-                style={{ width: "70%" }}
+                style={{ width: "64%" }}
                 className="hover:scale-110 hover:-rotate-6 hover:transition-all"
               />
             </div>
