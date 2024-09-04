@@ -74,12 +74,12 @@ const ImageGallery = () => {
       >
         <div className=" flex ">
           {image.map((item) => (
-            <div style={{ flex: "0 0 auto", marginRight: "20px" }}>
+            <div style={{ flex: "0 0 auto", marginRight: "5px" }}>
               <img
                 key={item.id}
                 src={item.imgs}
                 alt="image"
-                style={{ width: "80%" }}
+                style={{ width: "70%" }}
                 className="hover:scale-110 hover:-rotate-6 hover:transition-all"
               />
             </div>
