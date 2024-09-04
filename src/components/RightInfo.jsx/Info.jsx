@@ -6,19 +6,19 @@ const Info = () => {
     <div className="flex flex-col justify-center items-center w-11/12 mr-auto ml-auto m-3">
       <div className="flex justify-around items-center mb-5 h-14 w-11/12 bg-[#171717] rounded-2xl">
         <button
-          className="infos bg-transparent m-1 text-xl p-2 rounded-2xl pr-4 pl-4 focus:bg-[#28292e] focus:shadow-[10px_10px_20px_#000] hover:bg-[linear-gradient(to left, salmon 50%, lightblue 50%) right] "
+          className="infos bg-transparent m-1 text-lg p-2 rounded-2xl pr-4 pl-4 focus:bg-[#28292e] focus:shadow-[10px_10px_20px_#000] hover:bg-[linear-gradient(to left, salmon 50%, lightblue 50%) right] "
           onClick={() => setInfo("aboutMe")}
         >
           About Me
         </button>
         <button
-          className="infos bg-transparent m-1 text-xl p-2 rounded-2xl pr-4 pl-4 focus:bg-[#28292e] focus:shadow-[10px_10px_20px_#000]"
+          className="infos bg-transparent m-1 text-lg p-2 rounded-2xl pr-4 pl-4 focus:bg-[#28292e] focus:shadow-[10px_10px_20px_#000]"
           onClick={() => setInfo("experience")}
         >
           Experience
         </button>
         <button
-          className=" infos bg-transparent m-1 text-xl p-2 rounded-2xl pr-4 pl-4 focus:bg-[#28292e]  focus:shadow-[10px_10px_20px_#000]"
+          className=" infos bg-transparent m-1 text-lg p-2 rounded-2xl pr-4 pl-4 focus:bg-[#28292e]  focus:shadow-[10px_10px_20px_#000]"
           onClick={() => setInfo("recommended")}
         >
           Recommended
@@ -27,15 +27,14 @@ const Info = () => {
       <div className="scroll-container snap-y overflow-y-auto text-[#828588]">
         <p
           style={{ display: info === "aboutMe" ? "block" : "none" }}
-          className="w-full snap-start text-xl text-justify"
+          className="w-full snap-start text-lg text-justify"
         >
           Hello, I'm Aditya Tadas, a recent graduate with a BTech degree in
           Mechanical Engineering from DBATU University. Throughout my academic
           journey, I developed a strong interest in technology and transitioned
           my focus to front-end development. My primary skills lie in React.js,
           JavaScript, HTML, and CSS.
-          <br />
-          <br />
+          <br /><br />
           <span>
             I have worked on a few exciting projects, including a finance
             tracker and a podcast platform. The finance tracker helps users
@@ -52,7 +51,7 @@ const Info = () => {
         </p>
         <p
           style={{ display: info === "experience" ? "block" : "none" }}
-          className="w-full snap-start text-xl text-justify"
+          className="w-full snap-start text-lg text-justify"
         >
           As a fresher, I’ve worked on a finance tracker project where I
           developed a responsive web application using React.js, JavaScript,
@@ -66,7 +65,7 @@ const Info = () => {
         </p>
         <p
           style={{ display: info === "recommended" ? "block" : "none" }}
-          className="w-full snap-start text-xl text-justify"
+          className="w-full snap-start text-lg text-justify"
         >
         I’m focused on building my expertise in frontend
           development through practical projects like a finance tracker. My

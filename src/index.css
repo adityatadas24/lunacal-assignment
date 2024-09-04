@@ -22,7 +22,7 @@ code {
 
 /* In App.css or a corresponding CSS file */
 .scroll-container {
-  height: 150px;
+  height: 130px !important;
   overflow-y: scroll;
   scrollbar-color: #888 transparent; /* Firefox */
   scrollbar-width: thin; 
