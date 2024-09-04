@@ -72,14 +72,14 @@ const ImageGallery = () => {
           transform: `translateX(-${imageIndex * (100 / 3)}%)`,
         }}
       >
-        <div className="flex ">
+        <div className="flex justify-start items-center">
           {image.map((item) => (
-            <div style={{ flex: "0 0 auto" }}>
+            <div style={{ flex: "0 0 auto" , marginRight:"15px"}}>
               <img
                 key={item.id}
                 src={item.imgs}
                 alt="image"
-                style={{ width: "64%" }}
+                style={{ width: "138px", height:'133px' }}
                 className="hover:scale-110 hover:-rotate-6 hover:transition-all"
               />
             </div>
